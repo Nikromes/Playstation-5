@@ -44,10 +44,18 @@ body {
 .content-block-right__img img {
      position: absolute;
 }
+.content-block-left-wrapper-inner {
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+.content-block-right-wrapper-inner {
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
 .glitch-img {
     position: absolute; 
     width : 100%; 
-    height : 100%; 
+    /* height : 100%;  */
     top: 0 ; 
     left : 0; 
     background-position: center;  
@@ -156,6 +164,7 @@ body {
     margin-left: 50px;
     width: fit-content;
     height: fit-content;
+    z-index: -1;
 }
 .stroked {
     user-select: none;
@@ -190,6 +199,7 @@ body {
     margin-left: 50px;
     width: fit-content;
     height: fit-content;
+    z-index: -1;
 }
 .content-block-right__title-stroked {
     position: absolute;
