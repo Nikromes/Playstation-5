@@ -1,0 +1,16 @@
+@font-face {
+    font-family: sst-regular;
+    src: url(./fonts/SSTRg.TTF);
+}
+@font-face {
+    font-family: sst-medium;
+    src: url(./fonts/SSTMedium.TTF);
+}
+@font-face {
+    font-family: sst-light;
+    src: url(./fonts/SSTLight.TTF);
+}
+@font-face {
+    font-family: sst-bold;
+    src: url(./fonts/SSTBold.TTF);
+}

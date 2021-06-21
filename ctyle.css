@@ -1,0 +1,298 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    display: block;
+}
+body {
+    font-family: sst-light;
+    color: black;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+}
+.container {
+    overflow: hidden;
+}
+.blacked {
+    position: fixed;
+    background-color: #000 !important;
+    color: #FFFFFF;
+}
+.main-img {
+    width: 100%;
+}
+.content-block {
+    overflow: hidden;
+}
+.content-block-left__img,
+.content-block-right__img {
+    position: relative;
+    width: 540px;
+    height: 540px;
+    overflow: hidden;
+    z-index: -1;
+}
+.content-block-left__img img,
+.content-block-right__img img {
+     position: absolute;
+}
+.glitch-img {
+    position: absolute; 
+    width : 100%; 
+    height : 100%; 
+    top: 0 ; 
+    left : 0; 
+    background-position: center;  
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    opacity : 1;
+} 
+.header__text-wrapper {
+    background-color: rgb(0, 0, 0);
+    padding: 70px 92px 80px 92px;
+}
+.header__text {
+    max-width: 1020px;
+    color: #FFFFFF;
+    font-family: IBM Plex Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 36px;
+}
+.progress-line {
+    height: 85px;
+}
+.progress-line-wrapper {
+    padding: 25px 90px 25px 90px;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    transition: background-color 1s;
+    z-index: 999;
+}
+.progress-line__line {
+    transition: background-color 1s;
+    position: relative;
+    background-color: #000;
+    height: 2px;
+    width: 100%;
+}
+.progress-line__years {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sst-regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.123077px;
+    padding: 0 16px;
+}
+.progress-line__years-year {
+    transition: color 1s;
+    cursor: pointer;
+}
+.progress-line__dashes {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: -4px;
+}
+.progress-line__dashes-dash {
+    transition: background-color 1s;
+    height: 10px;
+    width: 2px;
+    background-color: #000;
+}
+.progress-line__progress {
+    position: absolute;
+    background-color: #000;
+    height: 6px;
+    width: 0px;
+    top: -2px;
+    transition: 1s;
+}
+.content-block-left {
+    margin-top: 115px;
+    min-height: 540px;
+    margin-right: 90px;
+    border: 1px solid black;
+    border-left: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-block-right {
+    margin-top: 115px;
+    min-height: 540px;
+    margin-left: 90px;
+    border: 1px solid black;
+    border-right: none;
+    display: flex;
+    justify-content: flex-start;
+}
+.content-block-left__title {
+    position: relative;
+    font-family: sst-bold;
+    font-style: normal;
+    font-size: 120px;
+    line-height: 90px;
+    color: #000;
+    margin-left: 50px;
+    width: fit-content;
+    height: fit-content;
+}
+.stroked {
+    user-select: none;
+}
+.content-block-left__title-stroked {
+    position: absolute;
+    font-family: sst-bold;
+    font-style: normal;
+    font-size: 120px;
+    line-height: 90px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+    border-radius: 50%;
+    transition: 1.3s;
+    width: 0%;
+    height: 0%;
+}
+.content-block-right__title {
+    position: relative;
+    font-family: sst-bold;
+    font-style: normal;
+    font-size: 120px;
+    line-height: 90px;
+    color: #000;
+    margin-left: 50px;
+    width: fit-content;
+    height: fit-content;
+}
+.content-block-right__title-stroked {
+    position: absolute;
+    font-family: sst-bold;
+    font-style: normal;
+    font-size: 120px;
+    line-height: 90px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+    border-radius: 50%;
+    transition: 1.3s;
+    width: 0%;
+    height: 0%;
+}
+.content-block-left__text-text {
+    font-family: sst-light;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-indent: 50px;
+    max-width: 620px;
+    margin-top: 35px;
+}
+.content-block-right__text-text {
+    font-family: sst-light;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-indent: 50px;
+    max-width: 620px;
+    margin-top: 35px;
+}
+.content-block-left-wrapper {
+    margin-top: 35px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-block-right-wrapper {
+    margin-top: 35px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer {
+    margin-top: 115px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    min-height: 794px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 90px;
+}
+.footer__title {
+    font-family: sst-bold;
+    font-style: normal;
+    font-size: 120px;
+    line-height: 90px;
+    color: #000;
+    margin-left: 50px;
+}
+.footer__subtitle {
+    font-weight: bold;
+    font-family: sst-light;
+    font-style: normal;
+    font-size: 24px;
+    text-indent: 50px;
+    margin-top: 40px;
+}
+.footer__text {
+    font-family: sst-light;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-indent: 50px;
+    max-width: 620px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+.footer__img {
+    margin-right: 100px;
+}
+.footer__button-btn {
+    width: 260px;
+    height: 60px;
+    margin-left: 60px;
+    border: none;
+    cursor: pointer;
+    font-family: sst-medium;
+    font-size: 16px;
+    line-height: 28px;
+    background-color: #000;
+    color: #FFFFFF;
+    transition: background-color .3s;
+}
+.footer__button-btn:hover {
+    background-color: rgb(59, 59, 59);
+}
