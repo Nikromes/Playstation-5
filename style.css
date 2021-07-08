@@ -54,7 +54,7 @@ body {
 }
 .glitch-img {
     position: absolute; 
-    width : 100%; 
+    /* width : 100%;  */
     /* height : 100%;  */
     top: 0 ; 
     left : 0; 
@@ -305,4 +305,7 @@ body {
 }
 .footer__button-btn:hover {
     background-color: rgb(59, 59, 59);
+}
+.progress-line-mobile {
+    display: none;
 }
